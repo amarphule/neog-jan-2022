@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .card__container {
@@ -62,23 +62,41 @@ body {
   justify-content: space-between;
   padding: 8px;
 }
+
 .card__btn {
   display: flex;
 }
+
 .card__btn--btn {
   color: var(--btn-color);
   padding: 10px;
 }
+
 .card__btn--btn:hover {
   background-color: var(--secondary-color);
   border-radius: 4px;
 }
 
 .card__icons {
+  margin-right: 30px;
   display: flex;
+  justify-content: space-between;
 }
-.card__icons--favorite .far {
-  padding: 10px;
+
+.card__icons--favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.card__icons--favorite .far,
+.fas {
   font-size: 24px;
   color: #6f6767;
+}
+
+.card__icons--favorite:hover {
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
 }
