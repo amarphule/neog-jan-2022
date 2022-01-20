@@ -65,6 +65,8 @@ body {
 
 .card__btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__btn--btn {
@@ -96,7 +98,7 @@ body {
 }
 
 .card__icons--favorite:hover {
-  width: 30px;
+  width: 20px;
   border-radius: 50%;
   background-color: var(--secondary-color);
 }
