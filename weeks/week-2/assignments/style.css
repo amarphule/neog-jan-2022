@@ -1,0 +1,101 @@
+:root {
+  --primary-bgcolor: #8753da;
+  --secondary-bgcolor: #b5a4d1;
+  --primary-color: #fff;
+  --badge-color: #b42ad6;
+  --body-bgcolor: rgba(229, 230, 235, 0.993);
+}
+body {
+  margin: 0px;
+  font-size: 24px;
+  background-color: var(--body-bgcolor);
+}
+.container {
+  width: 70%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+}
+.item {
+  margin-bottom: 2rem;
+}
+/* Small badge*/
+.badge__small {
+  position: relative;
+}
+.small {
+  position: absolute;
+  top: -0.5rem;
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+  background-color: var(--badge-color);
+  color: var(--primary-color);
+}
+
+/* Large badge */
+.badge__large {
+  position: relative;
+}
+.large {
+  position: absolute;
+  top: -0.9rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--badge-color);
+  color: var(--primary-color);
+}
+
+/* Badge on left side of button */
+.badge__button--onleft button {
+  position: relative;
+}
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-bgcolor);
+}
+.onleft {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--badge-color);
+  color: var(--primary-color);
+}
+
+/* Toggel badge on click */
+.badge__button--toggle {
+  position: relative;
+}
+.toggle {
+  position: absolute;
+  top: -1rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--badge-color);
+  color: var(--primary-color);
+}
+.hide {
+  display: none;
+}
+
+/* Badge for Icon */
+.badge__icon {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.onicon {
+  position: absolute;
+  top: -0.5rem;
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--badge-color);
+  color: var(--primary-color);
+}
