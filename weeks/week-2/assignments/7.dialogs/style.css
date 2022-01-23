@@ -1,0 +1,114 @@
+:root {
+  --primary-background: rgba(0, 0, 0, 0.3);
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  background-color: lavender;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container button,
+.modal__footer button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+}
+.modal {
+  overflow: auto;
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.modal__one {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  background-color: #fff;
+  margin: auto;
+  width: 300px;
+  border-radius: 5px;
+  position: relative;
+  top: 200px;
+  font-size: 2rem;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__body {
+  color: gray;
+}
+.modal__footer {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+/* second */
+.modal__two {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background-color: #fff;
+  margin: auto;
+  width: 300px;
+  border-radius: 5px;
+  position: relative;
+  top: 200px;
+  font-size: 2rem;
+}
+
+/* Three */
+.modal__three {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  background-color: #fff;
+  margin: auto;
+  width: 40%;
+  border-radius: 5px;
+  position: relative;
+  top: 200px;
+  font-size: 2rem;
+}
+.modal__three .modal__header {
+  padding: 1rem;
+}
+.modal__body ul {
+  list-style: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.modal__body ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal__body ul li img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
