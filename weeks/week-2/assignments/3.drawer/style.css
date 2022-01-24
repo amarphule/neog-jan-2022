@@ -12,23 +12,53 @@ body {
   background-color: var(--primary-color);
 }
 
-.container {
+/* .container {
   margin: 5rem;
-}
+  height: 100%;
+} */
 
+/* 1. Drawer lists*/
+/* 
 .drawer {
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  width: 15rem;
+  width: 20%;
   background-color: var(--drawer-background);
-}
+} */
 
+.drawer {
+  box-sizing: border-box;
+  background-color: var(--drawer-background);
+  width: 20%;
+  display: none;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 1s ease;
+}
+.drawer__header {
+  position: relative;
+  box-sizing: border-box;
+}
 .drawer__header--title {
   margin: 0px;
 }
 .drawer__header--subtitle {
   color: var(--secondary-color);
 }
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 2.5rem;
+  transition-delay: 1s;
+}
+
 .drawer__list {
   list-style: none;
   font-size: 1.5rem;
@@ -37,8 +67,9 @@ body {
 }
 
 .drawer__list--item {
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .drawer__list--item span {
@@ -50,11 +81,28 @@ body {
   border-radius: 5px;
   background-color: var(--active-background);
 }
-/* .fas {
-  color: var(--secondary-color);
-} */
+
 .drawer__list--item:hover {
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--hover-background);
+}
+
+/* Content area */
+.content__body {
+  /* transition: margin-left 1s; */
+  height: 100vh;
+  position: relative;
+}
+.hamberger {
+  cursor: pointer;
+}
+.content__body header h1 {
+  background-color: var(--active-color);
+  margin: 0;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+.content__body main {
+  padding: 0rem 3rem;
 }

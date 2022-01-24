@@ -16,7 +16,8 @@
     <title>Drawer</title>
   </head>
   <body>
-    <div class="container">
+    <!-- 1. Drawer lists -->
+    <!-- <div class="container">
       <div class="drawer">
         <div class="drawer__header">
           <h1 class="drawer__header--title">Title</h1>
@@ -41,6 +42,137 @@
           </li>
         </ul>
       </div>
+    </div> -->
+
+    <!-- Drawer Menu list with functionality -->
+    <div class="container">
+      <div class="drawer">
+        <div class="drawer__header">
+          <h1 class="drawer__header--title">Title</h1>
+          <small class="drawer__header--subtitle">Subtitle</small>
+          <div class="close">&times;</div>
+        </div>
+        <ul class="drawer__list">
+          <li class="drawer__list--item active">
+            <i class="fas fa-inbox"></i>
+            <span>Inbox</span>
+          </li>
+          <li class="drawer__list--item">
+            <i class="fas fa-star"></i>
+            <span>Star</span>
+          </li>
+          <li class="drawer__list--item">
+            <i class="fas fa-paper-plane"></i>
+            <span>Sent Mail</span>
+          </li>
+          <li class="drawer__list--item">
+            <i class="fas fa-envelope-open-text"></i>
+            <span>Draft</span>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Content area -->
+    <div class="content__body">
+      <header>
+        <h1><span class="hamberger">&#9776;</span> Dismissible Drawer</h1>
+      </header>
+      <main>
+        <p>
+          Click on the element below to open the side navigation menu, and push
+          this content to the right.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          aut nesciunt labore nam, nisi, molestiae doloremque cum dolorum ut est
+          similique facilis fugiat quam! Nobis, sunt eaque? Labore, alias
+          quidem. Vel eos omnis atque voluptatibus eius vitae illo nam quasi
+          earum nulla ratione voluptatem officiis aliquid saepe enim reiciendis
+          veritatis eligendi, quam minima consectetur nemo esse at. Optio,
+          perferendis natus? Dolorum eius et nihil dignissimos reiciendis
+          beatae, culpa architecto error consequatur eveniet illo laborum
+          dolores tempore delectus atque suscipit tempora adipisci hic quis
+          voluptatum sint, nostrum assumenda nobis pariatur. Veritatis. Illum,
+          accusamus! Nemo commodi dicta ipsam expedita assumenda laborum sint
+          reiciendis distinctio dolores eum soluta similique facere ratione
+          voluptate earum culpa, dolorum, itaque laboriosam beatae perferendis
+          tempora accusamus mollitia. Quaerat. Incidunt asperiores blanditiis
+          odio eaque a tempore, repellat ad, natus quas, ipsam ipsum. Tempora
+          deleniti eligendi, nisi perferendis repellat voluptatibus iusto optio
+          placeat quo dolores consectetur officia, in labore aliquid. Ipsam
+          eligendi soluta repellendus cumque sint distinctio natus maiores
+          explicabo aperiam obcaecati quasi, iure saepe neque, rerum quaerat
+          quibusdam quidem laborum, dolore aliquid minus in similique minima
+          optio? Nisi, dolorum? Adipisci ab eos eaque minus quam deleniti
+          labore. Distinctio aperiam voluptatum doloribus architecto, obcaecati
+          ab ducimus cumque ea in sit, accusamus quaerat culpa consequatur
+          possimus fugiat deserunt amet accusantium pariatur? Delectus
+          reiciendis nobis nisi corrupti, praesentium, culpa, at saepe placeat
+          assumenda deserunt debitis. Ea praesentium, consequuntur tempore
+          quisquam distinctio amet obcaecati iusto enim fugit quam nemo iste
+          nulla hic recusandae? Ut rem dolore tempore ipsum? Magni eum animi
+          quaerat in ducimus dolor labore, consequuntur beatae libero.
+          Repudiandae sapiente, voluptatibus laudantium, nam numquam sed maxime
+          magni autem, quisquam dicta odio laborum? Sapiente at libero facilis
+          corporis, aliquam veritatis autem enim? Dolorem nostrum tempore
+          officiis, quae maiores dolore reiciendis blanditiis error iure
+          praesentium porro accusamus quod, alias illo iste itaque quisquam
+          quidem. Eaque quaerat sed impedit labore unde? Dolor accusantium eos
+          alias enim ab quae ipsam veniam deleniti quos quis coLorem ipsum dolor
+          sit amet consectetur adipisicing elit. Voluptatibus aut nesciunt
+          labore nam, nisi, molestiae doloremque cum dolorum ut est similique
+          facilis fugiat quam! Nobis, sunt eaque? Labore, alias quidem. Vel eos
+          omnis atque voluptatibus eius vitae illo nam quasi earum nulla ratione
+          voluptatem officiis aliquid saepe enim reiciendis veritatis eligendi,
+          quam minima consectetur nemo esse at. Optio, perferendis natus?
+          Dolorum eius et nihil dignissimos reiciendis beatae, culpa architecto
+          error consequatur eveniet illo laborum dolores tempore delectus atque
+          suscipit tempora adipisci hic quis voluptatum sint, nostrum assumenda
+          nobis pariatur. Veritatis. Illum, accusamus! Nemo commodi dicta ipsam
+          expedita assumenda laborum sint reiciendis distinctio dolores eum
+          soluta similique facere ratione voluptate earum culpa, dolorum, itaque
+          laboriosam beatae perferendis tempora accusamus mollitia. Quaerat.
+          Incidunt asperiores blanditiis odio eaque a tempore, repellat ad,
+          natus quas, ipsam ipsum. Tempora deleniti eligendi, nisi perferendis
+          repellat voluptatibus iusto optio placeat quo dolores consectetur
+          officia, in labore aliquid. Ipsam eligendi soluta repellendus cumque
+          sint distinctio natus maiores explicabo aperiam obcaecati quasi, iure
+          saepe neque, rerum quaerat quibusdam quidem laborum, dolore aliquid
+          minus in similique minima optio? Nisi, dolorum? Adipisci ab eos eaque
+          minus quam deleniti labore. Distinctio aperiam voluptatum doloribus
+          architecto, obcaecati ab ducimus cumque ea in sit, accusamus quaerat
+          culpa consequatur possimus fugiat deserunt amet accusantium pariatur?
+          Delectus reiciendis nobis nisi corrupti, praesentium, culpa, at saepe
+          placeat assumenda deserunt debitis. Ea praesentium, consequuntur
+          tempore quisquam distinctio amet obcaecati iusto enim fugit quam nemo
+          iste nulla hic recusandae? Ut rem dolore tempore ipsum? Magni eum
+          animi quaerat in ducimus dolor labore, consequuntur beatae libero.
+          Repudiandae sapiente, voluptatibus laudantium, nam numquam sed maxime
+          magni autem, quisquam dicta odio laborum? Sapiente at libero facilis
+          corporis, aliquam veritatis autem enim? Dolorem nostrum tempore
+          officiis, quae maiores dolore reiciendis blanditiis error iure
+          praesentium porro accusamus quod, alias illo iste itaque quisquam
+          quidem. Eaque quaerat sed impedit labore unde? Dolor accusantium eos
+          alias enim ab quae ipsam veniam deleniti quos quis consequuntur et
+          corporis, suscipit est, at laboriosam ad, id dolores repudiandae
+          commodi! Qui consequatur eveniet, obcaecati delectus rerum vel quaerat
+          excepturi vitae esse corporis? Fugit deleniti est aspernatur alias
+          magnam sit pariatur earum fuga, eos recusandae dolore nulla saepe
+          impedit quia vero? Illum nam maiores delectus molestiae sint, tempora
+          odit soluta odio autem ducimus distinctio aliquam reprehenderit
+          dolorum debitis ea aspernatur aut unde minima architecto eveniet,
+          deserunt exercitationem at corporis iste. Laboriosam! Corporis hic
+          natus corrupti nulla eaque voluptatem atque, a quae nam quis nobis
+          iusto, dignissimos modi voluptas odit repellat eos inventore totam!
+          Omnis at accusantium nemo velit deleniti iure. Harum. Fugiat quasi
+          veritatis accusamus quas unde, tempore beatae ratione quae amet
+          necessitatibus a, nihil ut nulla quam ullam tempora laboriosam
+          corrupti consequatur quos blanditiis saepe possimus eaque. A, nulla
+          vitae?
+        </p>
+      </main>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
