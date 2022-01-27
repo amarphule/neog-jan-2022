@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fe7b324bfb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <div class="nav__menu">
+            <i class="fas fa-bars"></i>
+            My Travel
+          </div>
+          <div class="nav__links">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-share-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="tabs__container">
+          <div class="tab__item">
+            <i class="fas fa-compass"></i>
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label for="tab1">Explore</label>
+          </div>
+
+          <div class="tab__item">
+            <i class="fas fa-plane"></i>
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2">Flights</label>
+          </div>
+
+          <div class="tab__item">
+            <i class="fas fa-suitcase"></i>
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3">Trips</label>
+          </div>
+        </div>
+      </div>
+      <div id="content1" class="tab content1">Tab1 Contents</div>
+      <div class="tab content2">Tab2 Contents</div>
+      <div class="tab content3">Tab3 Contents</div>
+      <div class="content__container"></div>
+    </div>
+  </body>
+</html>
